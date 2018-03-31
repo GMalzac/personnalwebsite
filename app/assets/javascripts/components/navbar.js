@@ -10,3 +10,16 @@ function initUpdateNavbarOnScroll() {
 }
 
 export { initUpdateNavbarOnScroll };
+
+function initUpdateNavbarLinkOnScroll() {
+  const navbarLink = document.querySelector('.navbar-wagon-link');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= window.innerHeight) {
+      navbarLink.classList.add('navbar-wagon-white-link');
+    } else {
+      navbarLink.classList.remove('navbar-wagon-white-link');
+    }
+  });
+}
+
+export { initUpdateNavbarLinkOnScroll };
