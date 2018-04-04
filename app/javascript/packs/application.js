@@ -1,7 +1,7 @@
 import "bootstrap";
-import { initUpdateNavbarOnScroll } from '../../assets/javascripts/components/navbar';
+import { initUpdateNavbarOnScroll } from 'packs/navbar';
 initUpdateNavbarOnScroll();
-import { initUpdateNavbarLinkOnScroll } from '../../assets/javascripts/components/navbar';
+import { initUpdateNavbarLinkOnScroll } from 'packs/navbar';
 initUpdateNavbarLinkOnScroll();
 
 var app = document.getElementById('app');

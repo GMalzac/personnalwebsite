@@ -9,13 +9,12 @@ function initUpdateNavbarOnScroll() {
   });
 }
 
-export { initUpdateNavbarOnScroll };
+// export { initUpdateNavbarOnScroll };
 
 function initUpdateNavbarLinkOnScroll() {
   const navbarLinks = document.querySelectorAll('.navbar-wagon-link');
   window.addEventListener('scroll', () => {
     if (window.scrollY >= window.innerHeight) {
-      console.log(navbarLinks);
       navbarLinks.forEach((item) => {
         item.classList.add('navbar-wagon-white-link');
       });
@@ -27,4 +26,4 @@ function initUpdateNavbarLinkOnScroll() {
   });
 }
 
-export { initUpdateNavbarLinkOnScroll };
+export { initUpdateNavbarLinkOnScroll, initUpdateNavbarOnScroll };
