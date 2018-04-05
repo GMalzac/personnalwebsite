@@ -2,7 +2,7 @@
   background: #363636;
   display: block;
   align-items: center;
-  align-self: center;
+
   justify-content: center;
   height: 150px;
   padding: 0px 20px;
@@ -10,8 +10,10 @@
 
 }
 .footer-links {
+  padding-top: 20px;
   display: block;
   align-items: center;
+  padding-bottom: 5px;
 }
 .footer-links a {
   color: white;
