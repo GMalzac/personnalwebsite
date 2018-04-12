@@ -8,10 +8,6 @@ form {
   border-radius: 1em;
 }
 
-form div + div {
-  margin-top: 1em;
-}
-
 label {
   /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
   display: inline-block;
