@@ -30,11 +30,15 @@
   justify-content: space-between;
 }
 
+.navbar-wagon-right ul li {
+  display: inline-block;
+}
+
 /* Basic navbar item */
 .navbar-wagon-item {
   cursor: pointer;
   padding: 3px 10px;
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 
 /* Navbar link */
@@ -83,12 +87,14 @@
   background-color: white;
 }
 
+.active {
+  padding-bottom: 4px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #e43c52;
+}
+
 .navbar-wagon-white-link {
   color: #e43c52;
   font-weight: 700;
-}
-
-.active {
-  background-color: #e43c52;
-  border-radius: 3px;
 }

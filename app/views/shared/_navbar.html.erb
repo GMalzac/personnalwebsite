@@ -5,14 +5,24 @@
     <%= image_tag "logov4.png", height: 50 %>
   <% end %>
 
+<!--   <nav class="navigation fixed" id="nav">
+    <ul>
+      <li class="blue active"><a href="#home">Page 1</a></li>
+      <li class="green"><a href="#myskills">Page 2</a></li>
+      <li class="orange"><a href="#myportfolio">Page 3</a></li>
+      <li class="yellow"><a href="#aboutme">Page 4</a></li>
+    </ul>
+  </nav> -->
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="navbar-wagon-right hidden-xs hidden-sm" id="nav">
     <!-- Links -->
-    <%= link_to "Home", "#home", class: "navbar-wagon-item navbar-wagon-link active" %>
-    <%= link_to "My skills", "#myskills", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "My portfolio", "#myportfolio", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "About me", "#aboutme", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Contact", "#contact", class: "navbar-wagon-item navbar-wagon-link" %>
+    <ul>
+      <li><%= link_to "Home", "#home", class: "navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to "My skills", "#myskills", class: "navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to "My portfolio", "#myportfolio", class: "navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to "About me", "#aboutme", class: "navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to "Contact", "#contact", class: "navbar-wagon-item navbar-wagon-link" %></li>
+    </ul>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

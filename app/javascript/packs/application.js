@@ -1,4 +1,6 @@
 import "bootstrap";
+import {scrollspy} from "packs/scrollspy";
+$("#nav").scrollspy({ offset: -75 });
 import { initUpdateNavbarOnScroll } from 'packs/navbar';
 initUpdateNavbarOnScroll();
 import { initUpdateNavbarLinkOnScroll } from 'packs/navbar';
@@ -23,3 +25,5 @@ typewriter.typeString('Web Applications')
     .pauseFor(1500)
     .deleteAll()
     .start();
+
+
