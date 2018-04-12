@@ -16,7 +16,7 @@
             var defaults = {
                 namespace: 'scrollspy',
                 activeClass: 'active',
-                animate: false,
+                animate: true,
                 offset: 0,
                 container: window
             };
@@ -128,7 +128,7 @@
                             if (options.animate) {
 
                                 // Animate our scroll
-                                $('html, body').animate({ scrollTop: top }, 1000);
+                                $('html, body').animate({ scrollTop: top }, 500);
                             } else {
 
                                 // Scroll to our position
