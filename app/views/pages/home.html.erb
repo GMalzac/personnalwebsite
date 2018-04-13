@@ -2,14 +2,15 @@
   <section id="home">
     <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.5) 50%), url(<%= image_path "coding.jpg" %>);="">
       <div class="container">
-      <div class="banner-content">
-        <h1>Hi I'm Gregoire!</h1>
-        <%= image_tag 'ThatsMe.jpg', class: "avatar-medium" %>
-        <h1><strong> I design and build responsive</strong></h1>
-        <h2 id="app"></h2>
-        <div class="page-scroll skills text-center">
-          <%= link_to "Learn more about what I do", "#myskills", class: "nav" %>
-          <i class="fa fa-chevron-down"></i>
+        <div class="banner-content">
+          <h1>Hi I'm Gregoire!</h1>
+          <%= image_tag 'ThatsMe.jpg', class: "avatar-medium" %>
+          <h1><strong> I design and build responsive</strong></h1>
+          <h2 id="app"></h2>
+          <div class="page-scroll skills text-center">
+            <%= link_to "Learn more about what I do", "#myskills", class: "nav" %>
+            <i class="fa fa-chevron-down"></i>
+          </div>
         </div>
       </div>
     </div>
@@ -98,27 +99,43 @@
           <h3>Contact</h3>
             <form action="/ma-page-de-traitement" method="post">
               <abbr title="required"></abbr>
-              <div>
-                <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="Name*">
-                <abbr title="required"></abbr>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="user_name" placeholder="Name*">
+                    <abbr title="required"></abbr>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div>
+                    <label for="mail"></label>
+                    <input type="email" id="mail" name="user_mail" placeholder="E-mail*">
+                    <abbr title="required"></abbr>
+                  </div>
+                </div>
               </div>
-              <div>
-                <label for="mail"></label>
-                <input type="email" id="mail" name="user_mail" placeholder="E-mail*">
-                <abbr title="required"></abbr>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div>
+                    <label for="phone"></label>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div>
+                    <label for="website"></label>
+                    <input type="url" id="website" name="website" placeholder="Website url">
+                  </div>
+                </div>
               </div>
-              <div>
-                <label for="phone"></label>
-                <input type="tel" id="tel" name="tel" placeholder="Phone">
-              </div>
-              <div>
-                <label for="website"></label>
-                <input type="url" id="website" name="website" placeholder="Website url">
-              </div>
-              <div>
-                <label for="msg"></label>
-                <textarea cols="30" rows="100" id="msg" name="msg" placeholder="Please tell me more about your project : what is it? why is it for? what do you expect from me? Timelines and budget details are also appreciated..."></textarea>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div>
+                    <label for="msg"></label>
+                    <textarea cols="30" rows="100" id="msg" name="msg" placeholder="Please tell me more about your project : what is it? why is it for? what do you expect from me? Timelines and budget details are also appreciated..."></textarea>
+                  </div>
+                </div>
               </div>
               <div class="button">
                 <button type="submit">Submit</button>
@@ -129,6 +146,5 @@
     </div>
   </section>
 
-  </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
