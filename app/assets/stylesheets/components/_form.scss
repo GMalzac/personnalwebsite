@@ -2,9 +2,10 @@ form {
   /* Uniquement centrer le formulaire sur la page */
   margin: 0 auto;
   /* Encadré pour voir les limites du formulaire */
-  padding: 3em;
-  border: 1px solid #CCC;
+  padding: 40px;
+  border: 1px solid #e43c52;
   border-radius: 1em;
+  background-color: #e43c52;
   margin-bottom: 70px;
 }
 
@@ -36,12 +37,3 @@ textarea {
   height: 5em;
 }
 
-.button {
-
-}
-
-button {
-  /* Cette marge supplémentaire représente grosso modo le même espace que celui
-     entre les étiquettes et les champs texte */
-  margin-left: .5em;
-}
