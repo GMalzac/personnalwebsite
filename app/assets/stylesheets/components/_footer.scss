@@ -2,15 +2,14 @@
   background: #363636;
   display: block;
   align-items: center;
-
   justify-content: center;
-  height: 200px;
+  height: 250px;
   padding: 0px 20px;
   color: #363636;
 
 }
 .footer-links {
-  padding-top: 40px;
+  padding-top: 55px;
   display: block;
   align-items: center;
   padding-bottom: 5px;
@@ -47,3 +46,8 @@
   color: #e43c52
 }
 
+.credit a{
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+}
