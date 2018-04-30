@@ -7,9 +7,8 @@
           <%= image_tag 'ThatsMe.jpg', class: "avatar-medium" %>
           <h1><strong> I design and build responsive</strong></h1>
           <h2 id="app"></h2>
-          <div class="page-scroll skills text-center">
-            <%= link_to "Learn more about what I do", "#myskills", class: "nav" %>
-            <i class="fa fa-chevron-down"></i>
+          <div class="page-scroll skills text-center" id="learnmore">
+            <%= link_to "", "#myskills", class: "fas fa-chevron-down fa-2x learnlink" %>
           </div>
         </div>
       </div>
@@ -159,3 +158,11 @@
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $("#app a").click(function(){
+    var dfg = $(this).attr("href");
+    $("body").animate({scrollTop: $(dfg).offset().top}, "slow");
+    return false;
+  });
+</script>
