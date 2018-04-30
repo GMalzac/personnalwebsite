@@ -28,7 +28,6 @@ typewriter.typeString('Web Applications')
 
 $("#learnmore a").click(function(){
   var dfg = $(this).attr("href");
-  console.log(dfg);
   $("html, body").animate({scrollTop: $(dfg).offset().top}, 500);
   return false;
 });
