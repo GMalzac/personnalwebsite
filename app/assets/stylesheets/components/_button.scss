@@ -5,8 +5,10 @@
 }
 
 .interested-button {
+  text-decoration: none;
+  width: 440px;
   transition: ease-in 0.2s;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 50px;
   border-style: solid;
   border-color: #e43c52;
@@ -15,12 +17,14 @@
   color: #e43c52;
   font-weight: 600;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 50px;
 }
 
 .interested-button:hover{
+  text-decoration: none;
   transition: ease-out 0.4s;
+  width: 450px;
   color: white;
   background-color: #e43c52;
   padding: 10px 35px;
